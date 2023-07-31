@@ -116,7 +116,7 @@ export const calculateBarbequeDayChances = (weatherData) => {
 const getLocalTime = async (city) => {
   try {
     const response = await fetch(
-      `http://worldtimeapi.org/api/timezone/${city}`
+      `https://worldtimeapi.org/api/timezone/${city}`
     );
     const data = await response.json();
     const dateTime = data.datetime;
