@@ -1,0 +1,237 @@
+.expanded-day-card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .expanded-day-info-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 5px;
+    margin-top: 20px;
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+    .app-info {
+      width: 100%;
+      padding-left: 5px;
+      h3 {
+        margin: 0;
+        color: #8f8f8f;
+      }
+    }
+    .add-to-favorite {
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      background: none;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 10px;
+      margin-top: 20px;
+      min-width: 200px;
+      width: 10%;
+      img {
+        margin-right: 20px;
+        width: 25px;
+        height: 22px;
+      }
+    }
+    .first-data-set {
+      position: relative;
+      margin-right: 30px;
+      display: flex;
+      .weather-preview {
+        border-radius: 15px;
+        margin: 20px 20px 20px 0px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        width: 50%;
+        display: flex;
+        max-height: 400px;
+        justify-content: space-between;
+        padding: 20px;
+        .preview-dates {
+          text-align: center;
+          margin: auto 0;
+          margin-right: 15px;
+          max-width: 50%;
+          h2 {
+            font-size: calc(1.5em + 0.4vw);
+            margin: 0;
+            padding: 0;
+          }
+          p {
+            font-size: calc(0.5em + 0.4vw);
+            margin: 0;
+            color: #a1a7af;
+          }
+          h1 {
+            margin: 0;
+            font-size: calc(2em + 1.5vw);
+          }
+        }
+
+        .preview-icon {
+          margin-left: 15px;
+          position: relative;
+          max-height: 400px;
+          width: 166.55px;
+          text-align: center;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      .astro {
+        position: relative;
+        border-radius: 15px;
+        margin: 20px 0px 20px 0px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        display: flex;
+        max-height: 400px;
+        justify-content: space-between;
+        padding: 20px;
+        width: 50%;
+        overflow: hidden;
+        .sunrise,
+        .sunset {
+          .sunrise-hour,
+          .sunset-hour {
+            margin: auto;
+          }
+          font-weight: bold;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          img {
+            margin: auto;
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+    .second-data-set {
+      margin-right: 30px;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      justify-items: stretch;
+      align-items: stretch;
+      .weather-details {
+        border-radius: 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div img {
+          margin: auto;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    .third-data-set {
+      margin-top: 30px;
+      margin-right: 30px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .hour-dates {
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px;
+        border-bottom: 2px solid rgb(228, 227, 227);
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        .forecast-dates {
+          width: 200px;
+          img,
+          p {
+            width: 50%;
+          }
+          p {
+            margin-left: auto;
+          }
+        }
+        .humidity {
+          width: 80px;
+          img,
+          p {
+            width: 50%;
+          }
+        }
+        .hour,
+        .degrees,
+        .forecast-dates,
+        .humidity {
+          margin-right: 10px;
+        }
+        .hour,
+        .degrees,
+        .humidity {
+          font-weight: bold;
+        }
+        .forecast-dates,
+        .humidity,
+        .wind-speed {
+          text-align: center;
+          align-items: center;
+          display: flex;
+          img {
+            margin: auto;
+            width: 30px;
+            height: 30px;
+          }
+        }
+        &:first-child {
+          border-top: 2px solid rgb(228, 227, 227);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .expanded-day-card {
+    .expanded-day-info-container {
+      .first-data-set {
+        flex-direction: column;
+        .weather-preview,
+        .astro {
+          position: relative;
+          box-sizing: border-box;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 300px) {
+}
+
+@media screen and (min-width: 800px) {
+  .second-data-set {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}

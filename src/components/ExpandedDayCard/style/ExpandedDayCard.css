@@ -1,0 +1,388 @@
+.expanded-day-card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.expanded-day-card .expanded-day-info-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 5px;
+  margin-top: 20px;
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+}
+.expanded-day-card .expanded-day-info-container .app-info {
+  width: 100%;
+  padding-left: 5px;
+}
+.expanded-day-card .expanded-day-info-container .app-info h3 {
+  margin: 0;
+  color: #8f8f8f;
+}
+.expanded-day-card .expanded-day-info-container .add-to-favorite {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  background: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  min-width: 200px;
+  width: 10%;
+}
+.expanded-day-card .expanded-day-info-container .add-to-favorite img {
+  margin-right: 20px;
+  width: 25px;
+  height: 22px;
+}
+.expanded-day-card .expanded-day-info-container .first-data-set {
+  position: relative;
+  margin-right: 30px;
+  display: flex;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .weather-preview {
+  border-radius: 15px;
+  margin: 20px 20px 20px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 50%;
+  display: flex;
+  max-height: 400px;
+  justify-content: space-between;
+  padding: 20px;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .weather-preview
+  .preview-dates {
+  text-align: center;
+  margin: auto 0;
+  margin-right: 15px;
+  max-width: 50%;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .weather-preview
+  .preview-dates
+  h2 {
+  font-size: calc(1.5em + 0.4vw);
+  margin: 0;
+  padding: 0;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .weather-preview
+  .preview-dates
+  p {
+  font-size: calc(0.5em + 0.4vw);
+  margin: 0;
+  color: #a1a7af;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .weather-preview
+  .preview-dates
+  h1 {
+  margin: 0;
+  font-size: calc(2em + 1.5vw);
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .weather-preview
+  .preview-icon {
+  margin-left: 15px;
+  position: relative;
+  max-height: 400px;
+  width: 166.55px;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.expanded-day-card .expanded-day-info-container .first-data-set .astro {
+  position: relative;
+  border-radius: 15px;
+  margin: 20px 0px 20px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  max-height: 400px;
+  justify-content: space-between;
+  padding: 20px;
+  width: 50%;
+  overflow: hidden;
+}
+.expanded-day-card .expanded-day-info-container .first-data-set .astro .sunrise,
+.expanded-day-card .expanded-day-info-container .first-data-set .astro .sunset {
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .astro
+  .sunrise
+  .sunrise-hour,
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .astro
+  .sunrise
+  .sunset-hour,
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .astro
+  .sunset
+  .sunrise-hour,
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .astro
+  .sunset
+  .sunset-hour {
+  margin: auto;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .astro
+  .sunrise
+  img,
+.expanded-day-card
+  .expanded-day-info-container
+  .first-data-set
+  .astro
+  .sunset
+  img {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+.expanded-day-card .expanded-day-info-container .second-data-set {
+  margin-right: 30px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .second-data-set
+  .weather-details {
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .second-data-set
+  .weather-details
+  div
+  img {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+.expanded-day-card .expanded-day-info-container .third-data-set {
+  margin-top: 30px;
+  margin-right: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.expanded-day-card .expanded-day-info-container .third-data-set .hour-dates {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  border-bottom: 2px solid rgb(228, 227, 227);
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .forecast-dates {
+  width: 200px;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .forecast-dates
+  img,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .forecast-dates
+  p {
+  width: 50%;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .forecast-dates
+  p {
+  margin-left: auto;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .humidity {
+  width: 80px;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .humidity
+  img,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .humidity
+  p {
+  width: 50%;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .hour,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .degrees,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .forecast-dates,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .humidity {
+  margin-right: 10px;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .hour,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .degrees,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .humidity {
+  font-weight: bold;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .forecast-dates,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .humidity,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .wind-speed {
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .forecast-dates
+  img,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .humidity
+  img,
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates
+  .wind-speed
+  img {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
+.expanded-day-card
+  .expanded-day-info-container
+  .third-data-set
+  .hour-dates:first-child {
+  border-top: 2px solid rgb(228, 227, 227);
+}
+
+@media (max-width: 768px) {
+  .expanded-day-card .expanded-day-info-container .first-data-set {
+    flex-direction: column;
+  }
+  .expanded-day-card
+    .expanded-day-info-container
+    .first-data-set
+    .weather-preview,
+  .expanded-day-card .expanded-day-info-container .first-data-set .astro {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .second-data-set {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+} /*# sourceMappingURL=ExpandedDayCard.css.map */
