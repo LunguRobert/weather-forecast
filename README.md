@@ -1,71 +1,42 @@
-# Getting Started with Create React App
+## Weather Forecast Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://weather-forecast-tad2.onrender.com
 
-## Available Scripts
+### Overview
 
-In the project directory, you can run:
+ The Weather Forecast Dashboard is a ReactJS-based platform that provides users with accurate weather forecasts to help them plan successful grilling sessions. It makes API calls to [WeatherAPI](https://www.weatherapi.com/) to fetch weather data.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ - Display a collection of days with a summary of the weather forecast, including a success probability indicator for each day.
+ - Expand any day to view more detailed information.
+ - Bookmark favorite days and manage them in the Favorites section.
+ - Utilize local storage to save user preferences and favorites.
+ - Securely handle the API security key.
+ - Inform users about potential API call issues and errors gracefully.
+ - Modern and user-friendly design.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### How to Run
 
-### `npm test`
+1. Clone this repository to your local machine.
+2. Install the required dependencies using `npm install` or `yarn install`.
+3. Obtain an API key from [WeatherAPI](https://www.weatherapi.com/) and replace `YOUR_API_KEY` in `config.js` with your actual API key.
+4. Run the app using `npm start` or `yarn start`.
+5. Open your browser and navigate to `http://localhost:3000`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies Used
 
-### `npm run build`
+ - ReactJS
+ - React Hooks
+ - Local Storage API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Additional Notes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ Thank you for considering this project! The Weather Forecast Dashboard is designed with a responsive and user-friendly interface, making it easy to navigate and interact with.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For more detailed notes on the implementation and cool features used, check out the `notes.txt` file.
 
-### `npm run eject`
+ Please enjoy using the Weather Forecast Dashboard and contributing to the future of humanity-saving weather predictions! If you have any questions or feedback, don't hesitate to reach out.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Happy grilling!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# weather-forecast
